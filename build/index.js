@@ -547,7 +547,7 @@ var Popover = function (_React$Component) {
       );
       return [_react2.default.createElement(
         "div",
-        { className: be(className, 'trigger', [standing, isOpen ? 'isOpen' : null].concat(toArray(modifiers))) },
+        { key: "popoverTrigger", className: be(className, 'trigger', [standing, isOpen ? 'isOpen' : null].concat(toArray(modifiers))) },
         this.props.children
       ), _platform2.default.isClient && _reactDom2.default.createPortal(popover, this.props.appendTarget)];
     }
